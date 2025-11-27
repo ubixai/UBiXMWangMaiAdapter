@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMWangMaiAdapter'
-  s.version          = '7.4.2.17.1'
+  s.version          = '7.5.3.24.0'
   s.summary          = 'UBiX聚合广告变现SDK WangMai Adapter'
   s.homepage         = 'https://www.ubixai.com/product/md'
   # s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     'OTHER_LINK_FLAG' => '$(inherited) -ObjC' }
  
   
- s.dependency 'UBiXAdWangMaiSDK','7.4.2.17.0'
+ s.dependency 'UBiXAdWangMaiSDK','7.5.3.24.0'
  s.dependency 'UBiXMediationSDK'
  s.swift_version = '5.0'
 
