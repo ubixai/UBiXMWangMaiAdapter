@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMWangMaiAdapter'
-  s.version          = '7.8.4.32.0'
+  s.version          = '7.9.4.33.0'
   s.summary          = 'UBiX聚合广告变现SDK WangMai Adapter'
   s.homepage         = 'https://www.ubixai.com/product/md'
   # s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,12 +12,11 @@ Pod::Spec.new do |s|
 
   s.static_framework = true
 
-  s.vendored_frameworks = ['UBiXMWangMaiAdapter/UBiXMWangMaiAdapter.framework']
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'OTHER_LINK_FLAG' => '$(inherited) -ObjC' }
+  s.vendored_frameworks = ['UBiXMWangMaiAdapter/UBiXMWangMaiAdapter.xcframework']
+  s.pod_target_xcconfig = { 'OTHER_LINK_FLAG' => '$(inherited) -ObjC' }
  
   
- s.dependency 'UBiXAdWangMaiSDK','7.8.4.32.0'
+  s.dependency 'UBiXAdWangMaiSDK','7.9.4.33.0'
  s.dependency 'UBiXMediationSDK'
  s.swift_version = '5.0'
 
